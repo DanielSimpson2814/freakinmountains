@@ -1,0 +1,80 @@
+// header .container-fluid .banner
+//   height: 644px
+//   background:
+//     image: url("/images/freakinmountains-banner.png")
+//     repeat: no-repeat
+//     size: contain
+
+.banner
+  padding: 0
+  img
+    top: 0
+    left: 0
+    width: 95%
+    height: 95%
+
+// MAIN STUFF
+
+section
+  margin-top: 100px
+  section h2, p
+    color: $light-black
+main section img#phone
+  width: 100%
+
+#tablet-section
+  background: #fafbf5
+  .tablet-row
+
+    #tablet
+      width: 90%
+      padding-bottom: 0
+      margin-bottom: 0
+    h2
+      padding-top: 50px
+#laptop-section
+  #laptop
+    width: 100%
+
+
+nav.nav-pills
+  padding-top: 150px
+
+  a.nav-link.active
+    background: red
+    border-radius: 40px
+  a
+    color: red
+    transition: all 200ms ease
+    &:hover
+      color: $light-black
+
+.tab-content
+  padding-top: 50px
+  padding-bottom: 100px
+  div.tab-content .tab-pane h3, p
+    color: $light-black
+
+
+.iphone-row,
+.ipad-row,
+.imac-row
+  padding: 1em 1em
+
+.iphone-row img
+  width: 25%
+  margin-bottom: 30px
+.ipad-row img
+  width: 50%
+  margin-bottom: 30px
+.imac-row img
+  width: 80%
+  margin-bottom: 30px
+
+
+div.contact-row
+  h1, img#me, p
+    margin: 20px auto
+
+.contact-row img#me
+  border-radius: 50%

@@ -1,0 +1,93 @@
+//  SIDEBAR SLIDING STYLES
+.menu-slider
+  left: 0px !important
+  transition: all 300ms ease-in-out
+.toggle-slider
+  left: 300px !important
+  transition: all 300ms ease-in-out
+
+// HAMBURGER
+.toggle-menu
+  position: fixed
+  font-size: 40px
+  padding: 30px
+  color: $red
+  top: 0
+  left: 0px
+  transition: all 300ms ease-in-out
+  &:hover
+    color: lighten($red, 20%)
+//  NAV MENU
+.sidebar-menu
+  position: fixed
+  background: transparentize($red, 0.1)
+  opacity: 0.9
+  width: 300px
+  height: 100vh
+  max-height: 100vh
+  top: 0
+  left: -300px
+  margin-left: 0
+  z-index: 1000000
+  transition: all 300ms ease-in-out
+
+  .title-link
+    &:hover
+      text-decoration: none
+      cursor: pointer
+    &:focus
+      text-decoration: none
+    .menu-title
+      margin-top: 30px
+      color: #fff
+      font-weight: 100
+      border: 2px solid #fff
+      padding: 20px 0px
+      text-decoration: none
+
+      h2
+        font-weight: 100
+        margin: 0
+      span
+        font-weight: bold
+        color: $light-black
+
+  // NESTED SLIDING DROP-MENU
+  .nav-list
+    list-style-type: none
+    margin-top: 60px
+    padding-left: 10px
+    width: 90%
+
+    li
+      position: relative
+      font-size: 20px
+      text-transform: uppercase
+      border-bottom: 1px solid #fff
+      margin-bottom: 30px
+      padding-left: 5px
+      transition: all 200ms ease
+      &:hover
+        text-decoration: none
+
+    li > a
+      color: $light-black
+      &:hover, &:focus
+        color: #fff
+        text-decoration: none
+        cursor: pointer
+
+    ul.drop-menu
+      display: none
+      text-decoration: none
+      list-style-type: none
+
+      ul.drop-menu li
+        display: none
+
+    .menu-dropped
+      text-decoration: none
+      list-style-type: none
+      display: auto
+      height: auto
+      transition: all 200ms ease-in-out
